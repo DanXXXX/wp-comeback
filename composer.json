@@ -1,0 +1,32 @@
+{
+    "name": "mint/wp-comback",
+    "authors": [
+        {
+            "name": "DanXXXX",
+            "email": "nyoungvictoire@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+
+    "require": {
+        "johnpbloch/wordpress": "^5.7",
+        "wpackagist-theme/twentytwentyone": "*",
+        "wpackagist-theme/twentytwenty": "*",
+        "wpackagist-theme/twentynineteen": "*",
+        "wpackagist-theme/hueman": "*",
+        "wpackagist-plugin/hello-dolly": "*"
+
+    },
+    "extra": {
+        "wordpress-install-dir": "wp",
+        "installer-paths": {
+            "content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+    }
+}
